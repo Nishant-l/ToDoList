@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+    color: black;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+
+}
+#cards{
+    display:flex;
+    width: 65vw;
+    flex-wrap: wrap;
+}
+#each_card{
+    display: inline-block;
+    height: 220px;
+    width: 220px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    background-color: yellowgreen;
+}
+#workType{
+    display: inline-block;
+    height: 1.5rem;
+    width: 3.5rem;
+    background-color: rgb(241 17 17);
+    padding-top: 3px;
+    text-align: center;
+}
+#each_card p{
+    text-align: center;
+}
+#input{
+    display: inline-block;
+    margin-top: 50vh;
+}
