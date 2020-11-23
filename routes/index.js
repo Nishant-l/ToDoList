@@ -6,5 +6,6 @@ console.log('routs module fetched by index.js to use by app');
 
 router.get('/',homeControler.home);
 router.post('/addToList',homeControler.content);
+router.get('/DeleteFromList/',homeControler.del);
 
 module.exports=router;

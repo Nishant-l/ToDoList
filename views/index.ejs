@@ -10,15 +10,15 @@
                     <p><%= contact[i].date %></p>
                     <p><%= contact[i].message %></p>
                     <p id='workType'><%= contact[i].category %></p>
-                    <button>done</button>
+                    <a href="/DeleteFromList/?date=<%= contact[i].date %>">done</a>
                 </div>
             <% } %>
         </div>
         <div id="input">
             <form action="addToList" method="POST" >
                 <input type="text" name="date">
-                <input type="text" name="content">
-                <input type="text" name="type">
+                <input type="text" name="message">
+                <input type="text" name="category">
                 <button type="submit">submit</button>
             </form>
         </div>

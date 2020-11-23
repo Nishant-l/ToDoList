@@ -14,8 +14,8 @@ body{
 }
 #each_card{
     display: inline-block;
-    height: 220px;
-    width: 220px;
+    height: 20rem;
+    width: 15rem;
     margin-left: 2rem;
     margin-top: 2rem;
     background-color: yellowgreen;

@@ -2,12 +2,16 @@ const express=require('express');
 // const path=require('path');
 const port=8000;
 const app=express();
+const db=require('./config/mongoose');
 
+
+app.use(express.urlencoded());
 app.use('/',require('./routes'));
 app.use(express.static('assets'));
-app.use(express.urlencoded);
+
 app.set('view engine','ejs');
 app.set('views','./views');
+
 
 
 
