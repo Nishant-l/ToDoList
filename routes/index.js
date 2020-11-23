@@ -5,6 +5,6 @@ const homeControler=require('../controllers/home_controller');
 console.log('routs module fetched by index.js to use by app');
 
 router.get('/',homeControler.home);
-
+router.post('/addToList',homeControler.content);
 
 module.exports=router;

@@ -5,6 +5,7 @@ const app=express();
 
 app.use('/',require('./routes'));
 app.use(express.static('assets'));
+app.use(express.urlencoded);
 app.set('view engine','ejs');
 app.set('views','./views');
 

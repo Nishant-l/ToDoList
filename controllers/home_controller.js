@@ -16,3 +16,7 @@ module.exports.home=function(req,res){
         contact:contactList
     });
 }
+module.exports.content=function(req,res){
+    console.log(req.body);
+    res.redirect('back');
+}
