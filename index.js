@@ -3,6 +3,7 @@ const express=require('express');
 const port=8000;
 const app=express();
 const db=require('./config/mongoose');
+const Content=require('./models/content');
 
 
 app.use(express.urlencoded());
