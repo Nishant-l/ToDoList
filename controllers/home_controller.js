@@ -8,10 +8,20 @@ contactList=[{message:'my name is xyz i will buy abc',category:'home',date:'31-0
              {message:'my name is xyz i will buy abc my name is xyz i will buy abc',category:'home',date:'31-05-1998'}
 ];
 module.exports.home=function(req,res){
-    return res.render('index.ejs',{
-        Title:'ejs',
-        contact:contactList
+
+    Content.find({},function(err,content){
+        if(err){
+            console.log('error in fetching from db');
+            return;
+        }
+        return res.render('index.ejs',{Title:'ToDoList',contact:content});
     });
+
+
+    // return res.render('index.ejs',{
+    //     Title:'ejs',
+    //     contact:contactList
+    // });
 }
 module.exports.content=function(req,res){
     console.log(req.body);
@@ -25,10 +35,10 @@ module.exports.content=function(req,res){
             return;
         }
         console.log('*********',newContent);
-        return;
+        return res.redirect('back');
     })
-    contactList.push(req.body);
-    res.redirect('back');
+    // contactList.push(req.body);
+    // res.redirect('back');
 }
 
 module.exports.del=function(req,res){

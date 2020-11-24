@@ -5,12 +5,12 @@
     </head>
     <body>
         <div id="cards">
-            <% for(var i=0;i<contact.length;i++){ %>
+            <% for(let i of contact){ %>
                 <div id='each_card'>
-                    <p><%= contact[i].date %></p>
-                    <p><%= contact[i].message %></p>
-                    <p id='workType'><%= contact[i].category %></p>
-                    <a href="/DeleteFromList/?date=<%= contact[i].date %>">done</a>
+                    <p><%= i.date %></p>
+                    <p><%= i.message %></p>
+                    <p id='workType'><%= i.category %></p>
+                    <a href="/DeleteFromList/?date=<%= i._id %>">done</a>
                 </div>
             <% } %>
         </div>

@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const contentSchma= new mongoose.Schema({
     date:{
-        type:Date,
+        type:String,
         required:true
     },
     message:{
