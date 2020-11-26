@@ -1,6 +1,6 @@
 body{
-    background-color: black;
-    color: black;
+    background-color:  #171738/* black*/;
+    color: #171738;
     margin: 0;
     font-family: sans-serif;
     display: flex;
@@ -18,7 +18,8 @@ body{
     width: 15rem;
     margin-left: 2rem;
     margin-top: 2rem;
-    background-color: yellowgreen;
+    background-color: #8EF9F3/*yellowgreen*/;
+    border: 4px solid #593C8F;
 }
 #workType{
     display: inline-block;
@@ -33,5 +34,11 @@ body{
 }
 #input{
     display: inline-block;
-    margin-top: 50vh;
+    margin-top: 30vh;
+    margin-left: 66vw;
+    height: 50vh;
+    width: 27vw;
+    background-color: #FF6392;
+    border: 4px solid #fFD9C6;
+    position: fixed;
 }
