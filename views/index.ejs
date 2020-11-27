@@ -7,19 +7,32 @@
         <div id="cards">
             <% for(let i of contact){ %>
                 <div id='each_card'>
+                    <img src="/imj/pin.svg" alt="" id="pin">
                     <p><%= i.date %></p>
                     <p><%= i.message %></p>
                     <p id='workType'><%= i.category %></p>
-                    <a href="/DeleteFromList/?id=<%= i._id %>">done</a>
+                    <a href="/DeleteFromList/?id=<%= i._id %>"><img src="/imj/dustbin.svg" alt="" id="deleteIcon"></a>
                 </div>
             <% } %>
         </div>
         <div id="input">
-            <form action="addToList" method="POST" >
-                <input type="date" name="date">
-                <input type="text" name="message">
-                <input type="text" name="category">
-                <button type="submit">submit</button>
+            <h1>To Do List</h1>
+            <form action="addToList" method="POST" id="formBox" >
+                <div id="dateLabel">
+                    <label for="date" >Date</label>
+                    <input type="date" name="date" required id="date">
+                </div>
+                <p><label for="message">Things To Do</label></p>
+                <!-- <input type="text" name="message" required id="message"> -->
+                <textarea name="message" id="message" cols="40" rows="10" required></textarea>
+                <p><label for="category">Type of work</label></p>
+                <!-- <input type="text" name="category" required id="category"> -->
+                <select name="category" id="category">
+                    <option value="Home">Home</option>
+                    <option value="Work">Work</option>
+                    <option value="other">other</option>
+                </select>
+                <button type="submit">ADD</button>
             </form>
         </div>
     </body>

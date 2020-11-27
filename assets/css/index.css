@@ -20,6 +20,13 @@ body{
     margin-top: 2rem;
     background-color: #8EF9F3/*yellowgreen*/;
     border: 4px solid #593C8F;
+    border-radius: 40px
+}
+#pin{
+    height: 26px;
+    width: 50px;
+    margin-left: 3px;
+    margin-top: 6px;
 }
 #workType{
     display: inline-block;
@@ -33,12 +40,61 @@ body{
     text-align: center;
 }
 #input{
-    display: inline-block;
-    margin-top: 30vh;
+    display: flex;
+    margin-top: 12vh;
     margin-left: 66vw;
     height: 50vh;
     width: 27vw;
+    color: blanchedalmond;
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    /* flex-wrap: wrap; */
+}
+#input input{
+    display: block;
+    background-color: rgb(232, 240, 254);
+    border: none;
+    margin: auto;
+    padding: 4px;
+    text-align: center;
+}
+
+#formBox{
     background-color: #FF6392;
     border: 4px solid #fFD9C6;
-    position: fixed;
+    border-radius: 40px;
+}
+#input button{
+    display: block;
+    margin-top: 35px;
+    margin-left: 41%;
+    margin-bottom: 20px;
+    padding: 4px;
+    text-align: center;
+    height: 30px;
+    width: 72px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    
+}
+#category{
+    padding: 5px;
+    height: 30px;
+    width: 140px;
+}
+#dateLabel{
+    margin-top: 16px;
+}
+#message{
+    font-weight: 500;
+    padding: 10px;
+    font-size: 15px;
+    width: 78%;
+    height: 51px
+}
+#deleteIcon{
+    height: 20px;
+    width: 20px;
 }
