@@ -1,6 +1,9 @@
 const { text } = require('express');
 const mongoose = require('mongoose');
 
+//---------------- defining Schama for dataBase--------------------- 
+
+
 const contentSchma= new mongoose.Schema({
     date:{
         type:String,

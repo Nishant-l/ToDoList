@@ -1,3 +1,4 @@
+// ------------------------connecting to dataBase---------------------
 const mongoose=require('mongoose');
 
 mongoose.connect('mongodb://localhost/ToDoList');

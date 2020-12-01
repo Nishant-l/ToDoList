@@ -1,5 +1,7 @@
-// const db = require("../config/mongoose");
+
 const Content=require('../models/content');
+
+// ---------- configer controller to analyse request and send desired responsace--------------------
 
 module.exports.home=function(req,res){
 
@@ -28,7 +30,6 @@ module.exports.content=function(req,res){
 }
 
 module.exports.del=function(req,res){
-    // res.end(<h1>WOWOWOW</h1>);
     console.log(req.query.id);
     let q=req.query.id;
     Content.findByIdAndDelete(q,function(err){

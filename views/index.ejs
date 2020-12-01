@@ -5,6 +5,7 @@
     </head>
     <body>
         <div id="cards">
+            <!-- --------------------display cards containing details-------------- -->
             <% for(let i of contact){ %>
                 <div id='each_card'>
                     <img src="/imj/pin.svg" alt="" id="pin">
@@ -15,6 +16,7 @@
                 </div>
             <% } %>
         </div>
+        <!-- -----------------------form to take input-------------------------------  -->
         <div id="input">
             <h1>To Do List</h1>
             <form action="addToList" method="POST" id="formBox" >
@@ -23,10 +25,8 @@
                     <input type="date" name="date" required id="date">
                 </div>
                 <p><label for="message">Things To Do</label></p>
-                <!-- <input type="text" name="message" required id="message"> -->
                 <textarea name="message" id="message" cols="40" rows="10" required></textarea>
                 <p><label for="category">Type of work</label></p>
-                <!-- <input type="text" name="category" required id="category"> -->
                 <select name="category" id="category">
                     <option value="Personal">Personal</option>
                     <option value="Work">Work</option>
