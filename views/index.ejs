@@ -8,8 +8,8 @@
             <% for(let i of contact){ %>
                 <div id='each_card'>
                     <img src="/imj/pin.svg" alt="" id="pin">
-                    <p><%= i.date %></p>
-                    <p><%= i.message %></p>
+                    <p id="dateInCard" class="pAlign"><%= i.date %></p>
+                    <p id="messageInCard" class="pAlign"><%= i.message %></p>
                     <p id='workType'><%= i.category %></p>
                     <a href="/DeleteFromList/?id=<%= i._id %>"><img src="/imj/dustbin.svg" alt="" id="deleteIcon"></a>
                 </div>
