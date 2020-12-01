@@ -33,12 +33,12 @@ body{
 #workType{
     display: inline-block;
     height: 1.5rem;
-    width: 3.5rem;
+    width: 5.5rem;
     background-color: black;
     padding-top: 3px;
     text-align: center;
     color: white;
-    margin-left: 35%;
+    margin-left: 28%;
 }
 #each_card p{
     text-align: center;
@@ -101,7 +101,8 @@ body{
 #deleteIcon{
     height: 20px;
     width: 20px;
-    margin-left: 42%;
+    margin-left: 75%;
+    margin-top: 5%;
 }
 #dateInCard{
     height: 20px;
@@ -115,4 +116,16 @@ body{
 }
 .pAlign{
     margin-left: 15%;
+}
+#deleteButton{
+    height: 32px;
+    width: 100px;
+    background-color: #d01f1f;
+    margin-left: 25%;
+    border-radius: 15px;
+}
+#dateInCard img{
+    height: 20px;
+    width: 20px;
+    margin-right: 9px;
 }

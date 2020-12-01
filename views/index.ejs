@@ -8,10 +8,10 @@
             <% for(let i of contact){ %>
                 <div id='each_card'>
                     <img src="/imj/pin.svg" alt="" id="pin">
-                    <p id="dateInCard" class="pAlign"><%= i.date %></p>
+                    <p id="dateInCard" class="pAlign"><img src="/imj/calendar.svg" alt=""><%= i.date %></p>
                     <p id="messageInCard" class="pAlign"><%= i.message %></p>
                     <p id='workType'><%= i.category %></p>
-                    <a href="/DeleteFromList/?id=<%= i._id %>"><img src="/imj/dustbin.svg" alt="" id="deleteIcon"></a>
+                    <a href="/DeleteFromList/?id=<%= i._id %>" id="deleteButton"><img src="/imj/dustbin.svg" alt="" id="deleteIcon"></a>
                 </div>
             <% } %>
         </div>
@@ -28,8 +28,10 @@
                 <p><label for="category">Type of work</label></p>
                 <!-- <input type="text" name="category" required id="category"> -->
                 <select name="category" id="category">
-                    <option value="Home">Home</option>
+                    <option value="Personal">Personal</option>
                     <option value="Work">Work</option>
+                    <option value="School">School</option>
+                    <option value="Cleaning">Cleaning</option>
                     <option value="other">other</option>
                 </select>
                 <button type="submit">ADD</button>
